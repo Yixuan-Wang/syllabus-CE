@@ -10,7 +10,7 @@ export class Homepage extends Component {
         return (
             <div>
                 <Affix offsetTop={0}>
-                    <PageHeader title="课表助手" subTitle="帮你将课表保存到日历" extra={
+                    <PageHeader title="课表助手 (Fork)" subTitle="帮你将课表保存到日历" extra={
                         this.props.courses.length>0 && <Button size="small" onClick={()=>{this.props.navigate(ROUTES.edit);}}>
                             编辑器
                         </Button>
@@ -53,7 +53,7 @@ export class Homepage extends Component {
                     <br />
                     <p>
                         当前是 {SEMESTER.name} /&nbsp;
-                        <a onClick={()=>{this.props.navigate(ROUTES.about);}}>关于课表助手</a>
+                        <a onClick={()=>{this.props.navigate(ROUTES.about);}}>关于课表助手 (Fork)</a>
                     </p>
                 </div>
             </div>
