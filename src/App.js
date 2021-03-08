@@ -2,7 +2,7 @@ import React, {Component, PureComponent} from 'react';
 import {Layout} from 'antd';
 import {ROUTES, PAGE, RouteNotFound} from './routes';
 
-import {HeaderComp} from './shared/Header';
+// import {HeaderComp} from './shared/Header';
 import {FooterComp} from './shared/Footer';
 import {SidebarComp} from './shared/Sidebar';
 
@@ -48,7 +48,6 @@ class App extends Component {
 
         return (
             <div>
-                <HeaderComp />
                 <Layout style={{background: 'transparent'}}>
                     <SidebarComp current_route={this.state.route} navigate={this.navigate_bound} courses={this.state.courses} />
                     <Content className="next-to-sider">

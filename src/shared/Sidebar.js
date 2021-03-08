@@ -48,7 +48,6 @@ export function SidebarComp(props) {
                         }}
                 >
                     <Item key={ROUTES.import_elective}>从选课系统</Item>
-                    <Item key={ROUTES.import_isop}>从教务系统</Item>
                     <Item key={ROUTES.import_config}>从日历文件</Item>
                 </SubMenu>
                 <Item key={ROUTES.edit}>

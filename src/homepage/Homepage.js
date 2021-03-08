@@ -29,7 +29,7 @@ export class Homepage extends Component {
                     <p><b>选择数据来源：</b></p>
                     <br />
                     <Row gutter={16}>
-                        <Col md={8}>
+                        <Col md={12}>
                             <Card title={<span><Icon type="chrome" /> Elective</span>}>
                                 <Button size="large" type="primary" block onClick={()=>{this.props.navigate(ROUTES.import_elective);}}>
                                     <Icon type="right-circle" /> 选课系统
@@ -39,17 +39,7 @@ export class Homepage extends Component {
                             </Card>
                             <br />
                         </Col>
-                        <Col md={8}>
-                            <Card title={<span><Icon type="api" /> ISOP</span>}>
-                                <Button size="large" type="primary" block onClick={()=>{this.props.navigate(ROUTES.import_isop);}}>
-                                    <Icon type="right-circle" /> 教务系统
-                                </Button>
-                                <br /><br />
-                                <p>数据录入可能有延迟</p>
-                            </Card>
-                            <br />
-                        </Col>
-                        <Col md={8}>
+                        <Col md={12}>
                             <Card title={<span><Icon type="calendar" /> .ICS</span>}>
                                 <Button size="large" type="primary" block onClick={()=>{this.props.navigate(ROUTES.import_config);}}>
                                     <Icon type="right-circle" /> 日历文件
